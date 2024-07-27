@@ -14,7 +14,7 @@ def update_rtsp_url(url):
     return response.json()
 
 def process_rtsp_stream(url):
-    response = requests.post(f'{FLASK_SERVER_URL}/process_rtsp', json={'rtsp_url': url}, stream=True)
+    response = requests.post(f'{FLASK_SERVER_URL}/process-rtsp', json={'rtsp_url': url}, stream=True)
     return response
 
 def display_rtsp_url():
