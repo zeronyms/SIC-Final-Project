@@ -28,8 +28,9 @@ def is_valid_jpeg(buf):
     """Check if the buffer contains a valid JPEG image."""
     return buf.startswith(b'\xff\xd8') and buf.endswith(b'\xff\xd9')
 
-# ================================= Layout =========================================
-st.title("ESP32 CAM RTSP Stream")
+# ==================================== Layout =========================================
+
+st.title("Drowsiness Detection (Drow Ranger)")
 
 # URL display section
 url_placeholder = st.empty()
