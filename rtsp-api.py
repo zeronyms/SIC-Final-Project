@@ -58,7 +58,7 @@ def capture_frames(rtsp_url):
     cap.release()
 
 
-@app.route('/process_rtsp', methods=['POST'])
+@app.route('/process-rtsp', methods=['POST'])
 def process_rtsp():
     rtsp_url = request.json.get('rtsp_url')
     if not rtsp_url:
